@@ -90,14 +90,13 @@ class AwsS3Adapter extends AbstractAdapter implements CanOverwriteFiles
     }
     
     /**
-     * Get the S3Client presigned Url.
+     * Get the presigned Url.
      *
      * @return string
      */
-    public function getPresignedUrl($path,$expiration)
+    public function getPresignedUrl($path,$expiration = "+20 minutes")
     {
         $location = $this->applyPathPrefix($path);
-
         $command = $this->s3Client->getCommand(
             'getObject',
             [
@@ -105,10 +104,9 @@ class AwsS3Adapter extends AbstractAdapter implements CanOverwriteFiles
                 'Key'    => $location,
             ]
         );
+        $request= $this->s3Client->createPresignedRequest($command,$expiration);
 
-        $this->s3Client->createPresignedRequest($command,$expiration = "+20 minutes");
-		
-		return (string) $request->getUri();
+        return (string) $request->getUri();
     }
 
     /**
