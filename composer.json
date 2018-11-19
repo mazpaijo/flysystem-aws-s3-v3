@@ -1,5 +1,5 @@
 {
-    "name": "league/flysystem-aws-s3-v3",
+    "name": "mazpaijo/flysystem-aws-s3-v3",
     "description": "Flysystem adapter for the AWS S3 SDK v3.x",
     "license": "MIT",
     "authors": [
@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "league/flysystem": "^1.0.40",
+        "mazpaijo/flysystem": "^1.0.40",
         "aws/aws-sdk-php": "^3.0.0"
     },
     "require-dev": {
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "League\\Flysystem\\AwsS3v3\\": "src/"
+            "Mazpaijo\\Flysystem\\AwsS3v3\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "League\\Flysystem\\AwsS3v3\\Stub\\": "stub"
+            "Mazpaijo\\Flysystem\\AwsS3v3\\Stub\\": "stub"
         }
     },
     "config": {

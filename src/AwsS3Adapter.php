@@ -1,17 +1,17 @@
 <?php
 
-namespace League\Flysystem\AwsS3v3;
+namespace Mazpaijo\Flysystem\AwsS3v3;
 
 use Aws\Result;
 use Aws\S3\Exception\DeleteMultipleObjectsException;
 use Aws\S3\Exception\S3Exception;
 use Aws\S3\Exception\S3MultipartUploadException;
 use Aws\S3\S3Client;
-use League\Flysystem\Adapter\AbstractAdapter;
-use League\Flysystem\Adapter\CanOverwriteFiles;
-use League\Flysystem\AdapterInterface;
-use League\Flysystem\Config;
-use League\Flysystem\Util;
+use Mazpaijo\Flysystem\Adapter\AbstractAdapter;
+use Mazpaijo\Flysystem\Adapter\CanOverwriteFiles;
+use Mazpaijo\Flysystem\AdapterInterface;
+use Mazpaijo\Flysystem\Config;
+use Mazpaijo\Flysystem\Util;
 
 class AwsS3Adapter extends AbstractAdapter implements CanOverwriteFiles
 {

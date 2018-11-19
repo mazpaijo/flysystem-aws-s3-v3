@@ -1,6 +1,6 @@
 <?php
 
-namespace League\Flysystem\AwsS3v3\Stub;
+namespace Mazpaijo\Flysystem\AwsS3v3\Stub;
 
 use GuzzleHttp\Promise;
 use Aws\Result;

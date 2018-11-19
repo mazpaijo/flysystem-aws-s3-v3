@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\League\Flysystem\AwsS3v3;
+namespace spec\Mazpaijo\Flysystem\AwsS3v3;
 
 use Aws\Command;
 use Aws\Result;
@@ -8,10 +8,10 @@ use Aws\S3\Exception\DeleteMultipleObjectsException;
 use Aws\S3\Exception\S3Exception;
 use Aws\S3\Exception\S3MultipartUploadException;
 use GuzzleHttp\Psr7;
-use League\Flysystem\AdapterInterface;
-use League\Flysystem\AwsS3v3\AwsS3Adapter;
-use League\Flysystem\AwsS3v3\Stub\ResultPaginator;
-use League\Flysystem\Config;
+use Mazpaijo\Flysystem\AdapterInterface;
+use Mazpaijo\Flysystem\AwsS3v3\AwsS3Adapter;
+use Mazpaijo\Flysystem\AwsS3v3\Stub\ResultPaginator;
+use Mazpaijo\Flysystem\Config;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
